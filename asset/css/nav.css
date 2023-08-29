@@ -1,0 +1,37 @@
+.Header{
+    border: double 2px transparent;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3px;
+    background-color: rgba(61, 90, 128, 1);    
+    border: solid 1px aqua;
+}
+nav button{
+    background-color: transparent;
+    border: none;
+    font-weight: lighter;
+}
+nav form button{
+    color: white;
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    border-radius: 30%;
+    font-family: Helvetica;
+}
+
+nav button:hover{
+    color: aqua;
+}
+
+nav .active{
+    border: solid aqua;
+    color: aqua;
+    font-weight: lighter;
+}

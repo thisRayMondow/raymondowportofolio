@@ -1,0 +1,148 @@
+/* html { 
+    scroll-behavior: smooth; 
+  } */
+
+.Body{
+    color: #fff;
+    padding: 75px 5px 0 5px;
+}
+
+/* Beranda =================================================================================*/
+.beranda{
+    background-color: rgba(4, 22, 56, 0.8);
+    padding: 10px;
+    color: rgb(184, 219, 241);
+    border-radius: 20px;
+    border: solid 1px aqua;
+}
+.beranda:hover{    
+    box-shadow: aqua 0px 5px 10px, aqua 0px -5px 10px, 
+    aqua 0px 4px 6px, aqua 0px 10px 10px,
+     aqua 0px -3px 5px;
+}
+/* Beranda =================================================================================*/
+
+/* Tentang =================================================================================*/
+#tentang{
+    background-color: rgba(8, 49, 114, 0.8); 
+    padding: 20px;
+    margin: 10px 40px;
+    color: rgb(108, 186, 238);
+    font-family: calibri;
+    border: solid 1px aqua;
+    border-radius: 10px;
+}
+#tentang:hover{    
+    box-shadow: aqua 0px 5px 10px, aqua 0px -5px 10px, 
+    aqua 0px 4px 6px, aqua 0px 10px 10px,
+     aqua 0px -3px 5px;
+}
+#tentang img{
+    border-radius: 50%
+}
+/* Tentang =================================================================================*/
+
+/* Info =================================================================================*/
+#info{
+    background-color: rgba(3, 31, 77, 0.9); 
+    padding: 10px;
+    margin: 20px 20px;
+    color: rgb(215, 238, 252);
+    border-radius: 5px;
+    border: solid 1px aqua;
+}
+#info:hover{    
+    box-shadow: aqua 0px 5px 10px, aqua 0px -5px 10px, 
+    aqua 0px 4px 6px, aqua 0px 10px 10px,
+     aqua 0px -3px 5px;
+}
+#info table{
+    width: 100%;
+    margin-bottom: 10px;
+	font-family: monospace;
+    background-color: black;
+}
+#info .title{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    border-bottom: solid 2px whitesmoke;
+    border-top: solid 2px whitesmoke;
+}
+#info th{
+    border:double;
+	clear: both;
+    color: aqua; 
+    background-color: rgb(11, 124, 170);
+}
+#info th div{
+    color: aqua;
+}
+/* Info =================================================================================*/
+
+/* Proyek =================================================================================*/
+#proyek{
+    background-color: rgba(8, 49, 114, 0.8);
+    margin: 10px 10px;
+    font-family: calibri;
+    color: rgb(215, 238, 252);;
+    border: solid 1px aqua;
+    border-radius: 5px; 
+    padding: 10px;
+}
+#proyek .title{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    border-bottom: solid 2px whitesmoke;
+    border-top: solid 2px whitesmoke;
+}
+#proyek:hover{    
+    box-shadow: aqua 0px 5px 10px, aqua 0px -5px 10px, 
+    aqua 0px 4px 6px, aqua 0px 10px 10px,
+     aqua 0px -3px 5px;
+}
+#proyek table{
+    width: 100%;
+    margin-bottom: 10px;
+	font-family: monospace;
+    background-color: rgba(97, 255, 255, 0.3);
+    padding: 5px;
+}
+#proyek td{
+    border:double;
+	clear: both;
+    color: aqua;
+    font-size: 18px;
+}
+#proyek .col1{
+    text-align: center;
+    width: 50px;
+}
+#proyek .col2{
+    text-align: center;
+    width: 50px;
+}
+#proyek .col2 a{
+    text-decoration: none;
+    color: rgb(3, 20, 20);
+}
+/* Proyek =================================================================================*/
+
+/* Footer =================================================================================*/
+.footer p {
+    background-color: rgba(61, 90, 128, 0.6);    
+    border: solid 1px aqua;
+    color: aqua;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+    padding: 15px;
+    clear: both;
+}
+.footer div{
+    bottom: 3;
+    left: 0;
+    width: 100%;
+ }
+ /* Footer =================================================================================*/
+

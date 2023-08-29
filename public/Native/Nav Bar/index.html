@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Native | Nav Bar</title>
+
+    <!-- Internal Style -->    
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        .container-nav{
+            background-color: rgba(8, 33, 143, 0.6);
+            padding: 20px 5px 20px 5px;
+        }
+        .container-nav div{
+            display: inline;
+            margin: 5px;
+        }
+        .header-nav{
+            font-weight: bolder;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(47, 247, 247);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        div a{
+            text-decoration: none;
+            color: rgb(47, 247, 247);
+        }
+        .contain{
+            background-color: lightskyblue;
+            margin-top: 5px;
+            border-radius: 10px;
+            padding: 5px;
+            height: 450px;
+        }
+        .contain h3{
+            text-align: center;
+        }
+        .contain div p{
+            padding: 10px;
+        }
+        .active{
+            background-color: aqua;
+            color: rgb(20, 20, 90) !important;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footer{
+            margin-top: 30px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+        }
+    </style>
+    <!-- Internal Style -->
+</head>
+<body onload="getParameter()">
+    <div class="container-nav">
+        <div class="header-nav">R</div>
+        <!-- Versi 1 -->
+        <!-- <div><a href="#" onclick="active('beranda')" id="berandaNav">Beranda</a></div>
+        <div><a href="#" onclick="active('kontak')" id="kontakNav">Kontak</a></div> -->
+
+        <!-- Versi 2 -->
+        <div><a href="?submit=beranda" id="beranda">Beranda</a></div>
+        <div><a href="?submit=kontak" id="kontak">Kontak</a></div>
+    </div>
+
+    <div class="contain">
+        <div class="beranda" id="berandaBody">
+            <h3>Beranda</h3>
+            <div>
+                <p>
+                    Ini adalah halaman Beranda
+                </p>
+            </div>
+        </div>
+        <div class="kontak" id="kontakBody">
+            <h3>Kontak</h3>
+            <div>
+                <p>
+                    Ini adalah halaman Kontak
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <u><p> == &copy 2022 Ray Mondow Sagala == </p></u>
+        </div>
+    </div>
+
+    <script src="/public/Native/Nav Bar/index.js"></script>
+</body>
+</html>

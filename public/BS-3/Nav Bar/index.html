@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs3 | Nav Bar</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="/asset/bs-3/css/bootstrap.min.css">
+    <script src="/asset/bs-3/js/jquery.min.js"></script>
+    <script src="/asset/bs-3/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 3 -->
+
+    <!-- Internal Style -->    
+    <style>
+        body{
+            background-color: rgba(225, 225, 225, 1);
+        }
+        .contain{
+            background-color: rgba(19, 42, 73, 1);
+            height: auto;            
+            padding: 10px;
+        }
+        nav{
+            border : solid 2px rgba(47, 220, 252, 1) !important;
+            background-color: rgba(20, 99, 201, 0.9) !important;
+            padding : 5px 20px;
+        }
+        nav button{
+            background-color: white !important;
+        }
+        nav li a{
+            color:  rgba(47, 220, 252, 1) !important;
+            text-align: center;
+        }
+        .act{
+            border: solid 2px rgb(47, 220, 252);
+        }
+        .navbar-brand{
+            background-color: aqua; 
+            color:black !important; 
+            font-weight:bolder;
+            margin-right: 10px;
+            border-radius: 30%;
+            margin-bottom: 5px;
+        }
+        .navbar-brand:hover{
+            background-color: aqua !important; 
+        }
+        .container-fluid{
+            background-color: rgba(47, 220, 252, 1);
+            height: auto;
+            border-radius: 5px;
+            padding-bottom: 5px;
+            height: 500px;
+        }
+        .content{
+            color: #000;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+        }
+        .footer{
+            margin-top: 50px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!-- Internal Style -->
+</head>
+<body onload="getParameter()">
+    <div class="contain">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">R</div>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <form action="#" method="get">
+                    <ul class="nav navbar-nav">
+                        <li id="beranda">
+                            <a href="?submit=beranda">Beranda</a>
+                        </li>
+                        <li id="kontak">                        
+                            <a href="?submit=kontak">Kontak</a>                        
+                        </li>
+                    </ul>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <div class="container-fluid">
+            <div class="content" id="berandaBody">
+                <h4 class="text-center"><u>Beranda</u></h4>
+                <div>
+                    <p>Ini Adalah Halaman Beranda</p>
+                </div>
+            </div>
+    
+            <div class="content" id="kontakBody">
+                <h4 class="text-center"><u>Kontak</u></h4>
+                <div>
+                    <p>Ini Adalah Halaman Kontak</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div>
+            <u><p> == &copy 2022 Ray Mondow Sagala == </p></u>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("berandaBody").style.display = "none"
+        document.getElementById("kontakBody").style.display = "none"
+        function getParameter () {
+            addr = window.location.search
+            parameter =  new URLSearchParams(addr)            
+            nav = parameter.get("submit")
+            if (!nav) {
+                nav = "beranda"
+            }
+            var menu =  document.getElementById(nav)
+            var body =  document.getElementById(nav+"Body")
+            menu.className = "act"
+            body.style.display = "block"
+        }
+    </script>
+</body>
+</html>

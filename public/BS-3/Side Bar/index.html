@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman | Bs3 - Side Bar</title>
+
+    <!-- import Bootstrap 3 -->
+    <link rel="stylesheet" href="/asset/bs-3/css/bootstrap.min.css">
+    <script src="/asset/bs-3/js/jquery.min.js"></script>
+    <script src="/asset/bs-3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- import Bootstrap 3 -->
+    <!-- inpage style -->
+    <style>
+        body{
+            background-color: #b7f0d1;
+            padding: 5px 3px;
+        }
+        .card{
+            background-color: #7ca5db;
+            height: 700px;
+            margin-top: 60px;
+            padding: 0;
+        }
+        .navbar{
+            background-color: rgba(63, 192, 204, 0.7);
+            padding: 5px 10px;
+        }
+        .navbar a{
+            color: #fff !important;
+            font-size: 24px;
+        }
+        .navbar .navbar-brand:hover{
+            color: rgb(7, 35, 95) !important;
+        }
+        .navbar .title{
+            background-color: aqua; 
+            border-radius: 10px;
+            color: #000 !important;
+        }
+        .navbar .title:hover{
+            background-color: aqua; 
+            border-radius: 10px;
+            color: #000 !important;
+        }
+        .card div{
+            float: left;
+        }
+        .sidenav{
+            width: 20%;
+            padding: 5px;
+            background-color: lightblue;
+            height: 100%;
+            /* display: none; */
+        }
+        .content{
+            padding-left: 5px;
+            background-color: white;
+            height: 100px;
+            margin-bottom: 5px;
+            width: 100%; 
+        }
+        .footer{
+            margin-top: 30px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!-- inpage style -->
+</head>
+<body onload="getParameter()">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <strong class="navbar-brand title">R</strong>
+            <a class="navbar-brand" href="#" onclick="openNav()"><i class="bi bi-list"></i></a>
+        </div>
+    </nav> 
+
+    <div class="card">
+        <div class="sidenav" id="sidenav">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" id="beranda"><a href="?submit=beranda">Beranda</a></li>
+                <li role="presentation" id="kontak"><a href="?submit=kontak">Kontak</a></li>
+                <li role="presentation" id="info"><a href="?submit=info">Info</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div class="content" id="berandaBody">
+                <div>
+                    <h4>Beranda</h4>
+                    <p>
+                        Ini Adalah Halaman Beranda
+                    </p>
+                </div>
+            </div>
+            <div class="content" id="kontakBody">
+                <div>
+                    <h4>Kontak</h4>
+                    <p>
+                        Ini Adalah Halaman Kontak
+                    </p>
+                </div>
+            </div>
+            <div class="content" id="infoBody">
+                <div>
+                    <h4>Info</h4>
+                    <p>
+                        Ini Adalah Halaman Info
+                    </p>
+                </div>
+            </div>
+        </div>                   
+    </div>
+
+    <div class="footer">
+        <div>
+            <u><p> == &copy 2022 Ray Mondow Sagala == </p></u>
+        </div>
+    </div>
+
+    <script src="/public/BS-3/Side Bar/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#info .stroke-text{
+	--stroke-color:aqua;
+	--stroke-width:1px;
+	color:gold;
+	text-shadow: var(--stroke-width)  0 0 var(--stroke-color),
+	  calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+	  0 var(--stroke-width) 0 var(--stroke-color),
+	  0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+  }
+
+  #info .stroke{
+	--stroke-color:#f4c430;
+	--stroke-width:1px;
+	color:whitesmoke;
+	text-shadow: var(--stroke-width)  0 0 var(--stroke-color),
+	  calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+	  0 var(--stroke-width) 0 var(--stroke-color),
+	  0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+  }

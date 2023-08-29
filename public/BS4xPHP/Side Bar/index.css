@@ -1,0 +1,39 @@
+.content{
+    height: 500px;
+    margin: 1px 1px;
+    padding: 3px;
+}
+.main{
+    border: solid 1px rgb(58, 180, 228);
+    width: 80%;
+    height: 100%;
+    padding: 5px 5px;
+    /* overflow-y: scroll; */
+}
+.sidebar{
+    border: solid 1px rgb(0, 183, 255);
+    background-color: rgba(100, 194, 235, 1);
+    width: 20%;
+    height: 100%;
+    padding: 5px 5px;
+}
+.content div{
+    float: left;
+}
+.active{
+    background-color: rgb(4, 91, 121);
+    color: aqua !important;
+    border-radius: 5px;
+}
+.nav-link{
+    font-weight: bolder;
+}
+.navbar-brand{
+    border-radius: 5px;
+    color: white !important;
+    font-weight: bold;
+}
+.main .card{
+    display: none;
+    /* height: 700px; */
+}

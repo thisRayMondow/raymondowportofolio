@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bs3 | Table</title>
+
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="/asset/bs-3/css/bootstrap.min.css">
+    <script src="/asset/bs-3/js/jquery.min.js"></script>
+    <script src="/asset/bs-3/js/bootstrap.min.js"></script>
+    <!-- Bootstrap 3 -->
+
+    <!-- Internal Style -->    
+    <style>
+        body{
+            background-color: rgba(225, 225, 225, 1);
+        }
+        .contain{
+            background-color: rgba(19, 42, 73, 1);
+            height: auto;
+            padding: 10px;
+        }
+        nav{
+            border : solid 2px rgba(47, 220, 252, 1) !important;
+            background-color: rgba(20, 99, 201, 0.9) !important;
+            padding : 5px 20px;
+        }
+        nav button{
+            background-color: white !important;
+        }
+        nav li a{
+            color:  rgba(47, 220, 252, 1) !important;
+            text-align: center;
+        }
+        .act{
+            border: solid 2px rgb(47, 220, 252);
+        }
+        .navbar-brand{
+            background-color: aqua; 
+            color:black !important; 
+            font-weight:bolder;
+            margin-right: 10px;
+            border-radius: 30%;
+            margin-bottom: 5px;
+        }
+        .navbar-brand:hover{
+            background-color: aqua !important; 
+        }
+        .container-fluid{
+            background-color: rgba(47, 220, 252, 1);
+            height: auto;
+            border-radius: 5px;
+            padding-bottom: 5px;
+        }
+        .content{
+            color: #000;
+            padding-left: 5px;
+            padding-bottom: 5px;
+            border-radius: 10px;
+        }
+        .artikel{
+            border: solid 2px rgba(19, 42, 73, 1);
+            padding: 5px;
+            margin-top: 3px;
+            background-color: rgba(49, 125, 190, 0.6);
+            border-radius: 3px;
+        }
+        table, tr, th , td{
+            border-color: #000 !important;
+        }
+        table{
+            background-color: rgba(49, 125, 190, 0.6);
+        }
+        .footer{
+            margin-top: 50px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <!-- Internal Style -->
+</head>
+<body onload="getParameter()">
+    <div class="contain">
+        <nav class="navbar navbar-default" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand">R</div>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <form action="#" method="get">
+                    <ul class="nav navbar-nav">
+                        <li id="beranda">
+                            <a href="?submit=beranda">Beranda</a>
+                        </li>
+                        <li id="kontak">                        
+                            <a href="?submit=kontak">Kontak</a>                        
+                        </li>
+                    </ul>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+
+        <div class="container-fluid">
+            <div class="content" id="berandaBody">
+                <h4 class="text-center"><u>Beranda</u></h4>
+                <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                        + Tambah Artikel
+                    </button>
+
+                    <div class="artikel">
+                        <h5>Pemrograman Dasar Web - <b>Ray Mondow S</b></h5>
+                        <p>
+                            Pengembangan web adalah pekerjaan yang terlibat dalam mengembangkan situs web untuk Internet (World Wide Web)
+                            atau intranet (jaringan pribadi).
+                            Pengembangan web dapat berkisar dari mengembangkan satu halaman statis sederhana dari teks biasa hingga aplikasi web yang kompleks, 
+                            bisnis elektronik, dan layanan jejaring sosial. 
+                            pengembangan, penghubung klien, skrip sisi klien/sisi server, server Web dan konfigurasi keamanan jaringan, 
+                            dan pengembangan e-commerce.
+                        </p>
+                        <label>Pemrograman, Pemrograman Web, Programmer, Pengembangan web.</label>
+                    </div>
+
+                    <div class="artikel">
+                        <h5>Jaringan Komputer - <b>Alfonso Lian</b></h5>
+                        <p>
+                            Jaringan komputer adalah sekumpulan komputer yang berbagi sumber daya yang terletak di atau disediakan oleh node jaringan. 
+                            Komputer menggunakan protokol komunikasi umum melalui interkoneksi digital untuk berkomunikasi satu sama lain. 
+                            Interkoneksi ini terdiri dari teknologi jaringan telekomunikasi, berdasarkan metode frekuensi radio kabel, optik, 
+                            dan nirkabel yang dapat diatur dalam berbagai topologi jaringan.
+                        </p>
+                        <label>Komputer, Jaringan, Jaringan Komputer.</label>
+                    </div>
+
+                    <div class="artikel">
+                        <h5>Komputer Personal - <b>Ronald P</b></h5>
+                        <p>
+                            Komputer pribadi (PC) adalah komputer mikro multiguna yang ukuran, kemampuan,
+                             dan harganya membuatnya layak untuk penggunaan individu.
+                             Komputer pribadi dimaksudkan untuk dioperasikan secara langsung oleh pengguna akhir, bukan oleh ahli komputer atau teknisi. 
+                             Tidak seperti komputer mini dan mainframe yang besar dan mahal, 
+                             pembagian waktu oleh banyak orang pada saat yang sama tidak digunakan dengan komputer pribadi. 
+                             Terutama pada akhir 1970-an dan 1980-an, istilah komputer rumah juga digunakan.
+                        </p>
+                        <label>Komputer, Komputer Personal, PC, Personal Computer.</label>
+                    </div>
+
+                    <div class="artikel" id="add">
+                        <h5><label  id="titlePost"></label> - <b id="authorPost"></b></h5>
+                        <p id="dataPost"></p>
+                        <label id="tagPost"></label>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content" id="kontakBody">
+                <h4 class="text-center"><u>Kontak</u></h4>
+                <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+                        + Tambah Kontak
+                    </button>
+                    
+                    <div class="artikel">
+                        
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nama Author</th>
+                                    <th>Email Author</th>
+                                    <th>No.Telp Author</th>
+                                    <th>Jenis Kelamin</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Ray Mondow S</td>
+                                    <td>ray123@gmail.com</td>
+                                    <td>082135766712</td>
+                                    <td>Pria</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Alfonso Lian</td>
+                                    <td>lian-lian@gmail.com</td>
+                                    <td>089666772131</td>
+                                    <td>Pria</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Ronald P</td>
+                                    <td>RonP@gmail.com</td>
+                                    <td>087713129889</td>
+                                    <td>Pria</td>
+                                </tr>
+
+                                <tr id="addcontact">
+                                    <td id="authcontact"></td>
+                                    <td id="emailcontact"></td>
+                                    <td id="phonecontact"></td>
+                                    <td id="gendercontact"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <div>
+            <u><p> == &copy 2022 Ray Mondow Sagala == </p></u>
+        </div>
+    </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel"></h4>
+                    </div>
+
+                    <!-- <form action="" method="POST" role="form" onsubmit="getPost()"> -->
+                        <div class="modal-body" id="berandaModal">                       
+                            <div class="form-group">
+                                <label for="title">Judul Artikel</label>                                
+                                <input type="text" name="title" id="title" class="form-control" required>                               
+                            </div>
+
+                            <div class="form-group">
+                                <label for="isi">Isi Artikel</label> 
+                                <textarea name="isi" id="isi" class="form-control" rows="3" required style="width: 75%;"></textarea>                                
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="tag">Tag</label>                                 
+                                <input type="text" name="tag" id="tag" class="form-control" required>                                
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="tag">Penulis</label>                                 
+                                <input type="text" name="penulis" id="penulis" class="form-control" required>                                
+                            </div> 
+                        </div>
+                        <!-- Batas -->
+                        <div class="modal-body" id="kontakModal">                       
+                            <div class="form-group">
+                                <label for="auth">Nama Author</label>                                
+                                <input type="text" name="auth" id="auth" class="form-control" required autofocus>                               
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>                                 
+                                <input type="email" name="email" id="email" class="form-control" required>                                
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">No Telepon</label>                                 
+                                <input type="phone" name="phone" id="phone" class="form-control" required maxlength="12">                                
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="gender">Jenis Kelamin : </label>                                 
+                                <select name="gender" id="gender">
+                                    <option value="pria">Pria</option>
+                                    <option value="wanita">Wanita</option>
+                                </select>                               
+                            </div> 
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-primary" onclick="getPost()">Kirim</button>
+                        </div>
+                    <!-- </form>  -->
+                </div>
+            </div>
+        </div>
+    <!-- Modal -->
+
+    <script src="/public/BS-3/Tabel/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+body{
+    background-color: rgba(18, 93, 231, 0.8);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container-fluid{
+    background-color: rgba(12, 193, 221, 0.4);
+    height: 500px;
+    padding-top: 75px;
+}
+.container-sm{
+    width: 400px;
+    padding: 30px;
+    border: double 2px #000;
+    background-color: rgba(17, 112, 167, 0.5);
+    font-weight: bold;
+}
+.form-group input{
+    background-color: rgb(114, 210, 241);
+}
